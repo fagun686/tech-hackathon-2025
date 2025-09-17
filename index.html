@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hackathon 2025 - Register Now</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 3D Background Canvas -->
+    <canvas id="threejs-canvas"></canvas>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1><i class="fas fa-code"></i> Tech Hackathon 2025</h1>
+                <div class="header-info">
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>March 15-17, 2025</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Tech Hub, Silicon Valley</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <span>48 Hours</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>Build the Future</h2>
+                    <p>Join 500+ developers, designers, and innovators for the most exciting hackathon of 2025. Create solutions that matter, learn from industry experts, and compete for amazing prizes in an immersive 3D experience!</p>
+                    <a href="#registration" class="cta-button">
+                        <i class="fas fa-rocket"></i> Register Now
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>$50K</h3>
+                        <p>Prize Pool</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>500+</h3>
+                        <p>Participants</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>20+</h3>
+                        <p>Sponsors</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>48</h3>
+                        <p>Hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="event-details">
+        <div class="container">
+            <h2 class="section-title">Event Details</h2>
+            <div class="details-grid">
+                <div class="detail-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Innovation Challenges</h3>
+                    <p>Work on cutting-edge problems in AI, Web3, IoT, and Sustainability. Choose from multiple tracks and create solutions that can change the world.</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Networking</h3>
+                    <p>Connect with like-minded developers, industry professionals, and potential co-founders. Build lasting relationships in the tech community.</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Prizes & Recognition</h3>
+                    <p>Compete for cash prizes, internship opportunities, and startup funding. Winners get featured in tech publications and investor meetings.</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Learn & Grow</h3>
+                    <p>Attend workshops by industry experts, get mentorship from senior developers, and learn new technologies through hands-on experience.</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Tech Stack</h3>
+                    <p>Use any programming language or framework. We provide APIs, cloud credits, and development tools to bring your ideas to life.</p>
+                </div>
+                <div class="detail-card">
+                    <i class="fas fa-pizza-slice"></i>
+                    <h3>Food & Fun</h3>
+                    <p>Enjoy free meals, snacks, and beverages throughout the event. Participate in mini-games and entertainment during breaks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="registration" class="registration">
+        <div class="container">
+            <h2 class="section-title">Register Now</h2>
+            <div class="form-container">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                            <i class="fas fa-user"></i> Full Name
+                        </label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <i class="fas fa-envelope"></i> Email Address
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">
+                            <i class="fas fa-phone"></i> Phone Number
+                        </label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">
+                            <i class="fas fa-building"></i> College/Organization
+                        </label>
+                        <input type="text" id="organization" name="organization" placeholder="Enter your college or organization" required>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> Submit Registration
+                    </button>
+                    <div class="loading" id="loading">
+                        <div class="spinner"></div>
+                        <p>Processing your registration...</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 Tech Hackathon. All rights reserved.</p>
+            <p>Built with ❤️ for the developer community</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button -->
+    <a href="#registration" class="fab">
+        <i class="fas fa-user-plus"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
